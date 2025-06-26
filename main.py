@@ -3,13 +3,12 @@ import time
 import os
 
 def main():
-    print("Playing Song...")
     filepath = os.path.abspath("media/cyanide.mp3")
+    print("Playing", os.path.basename(filepath)[:-4].title())
     
     pygame.init()
     pygame.mixer.init()
-    print("Mixer init:", pygame.mixer.get_init())
-    
+
     pygame.mixer.music.load(filepath)
     pygame.mixer.music.play()
 
