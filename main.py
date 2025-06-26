@@ -3,6 +3,14 @@ import time
 import os
 
 def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+
+
+
+'''
     filepath = os.path.abspath("media/cyanide.mp3")
     print("Playing", os.path.basename(filepath)[:-4].title())
     
@@ -14,6 +22,4 @@ def main():
 
     while pygame.mixer.music.get_busy():
         time.sleep(1)
-
-if __name__ == "__main__":
-    main()
+'''
